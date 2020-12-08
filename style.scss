@@ -1,0 +1,152 @@
+$primaryfont: 'atten-new', sans-serif;
+$orange: #eb9764;
+$dark-text: rgb(97, 97, 97);
+
+@mixin deafult-link {
+  color: $dark-text;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+@mixin heading {
+  color: $orange;
+  font-size: 2.7em;
+  font-weight: bold;
+}
+
+@mixin subheading {
+  color: $dark-text;
+  font-size: 1.7em;
+  font-style: italic;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  border-radius: 5px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgb(172, 172, 172);
+  border-radius: 10px;
+}
+
+body {
+  // background-image: linear-gradient(to bottom right, white, white, #eb9764);
+  font-family: $primaryfont;
+  overflow-x: hidden;
+
+  // topbar
+  nav {
+    position: fixed;
+    top: -10px;
+    right: 0;
+    z-index: 99999;
+    display: flex;
+    justify-content: flex-end;
+    padding: 2em;
+    a {
+      @include deafult-link();
+      position: relative;
+      transition: all 0.2s ease-in-out;
+      text-transform: uppercase;
+      padding: 1em;
+    }
+    a:hover {
+      color: $orange;
+      font-size: 1.1em;
+    }
+  }
+  // main content
+  main {
+    padding: 0em;
+    display: flex;
+    flex-direction: column;
+    h1 {
+      @include heading();
+    }
+    h2 {
+      @include subheading();
+    }
+    #about-box {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: row;
+      height: 100vh;
+      font-size: 1.3em;
+      text-align: left;
+      z-index: 9999;
+      .content {
+        padding: 3em;
+        p {
+          width: 92%;
+        }
+      }
+    }
+    img {
+      margin: 0 -9em;
+      width: 60vw;
+    }
+  }
+  // style guide section
+  #style-guide-box {
+    margin-top: -10em;
+    #style-guide {
+      margin-top: -20em;
+      width: 100%;
+      z-index: 0000;
+    }
+  }
+  // ui mockup section
+  #ui-mockup {
+    height: 100vh;
+    img {
+      transform: rotate(-10deg);
+      margin: -15em 0;
+    }
+  }
+  // goals section
+  #goals {
+    background-image: url('/dog-bg.jpg');
+    background-repeat: no-repeat;
+    background-position-y: bottom;
+    background-position-x: 10em;
+    font-size: 1.3em;
+    height: vh;
+    padding: 1.6em;
+    .content {
+      width: 65%;
+      margin-top: 5em;
+      h2 {
+        @include subheading();
+        padding: 1em 0;
+      }
+      p {
+        color: $dark-text;
+      }
+      .bold {
+        font-weight: bold;
+        color: $orange;
+      }
+    }
+  }
+}

@@ -1,0 +1,172 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  border-radius: 5px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #acacac;
+  border-radius: 10px;
+}
+
+body {
+  font-family: "atten-new", sans-serif;
+  overflow-x: hidden;
+}
+
+body nav {
+  position: fixed;
+  top: -10px;
+  right: 0;
+  z-index: 99999;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  padding: 2em;
+}
+
+body nav a {
+  color: #616161;
+  font-weight: bold;
+  text-decoration: none;
+  position: relative;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  text-transform: uppercase;
+  padding: 1em;
+}
+
+body nav a:hover {
+  color: #eb9764;
+  font-size: 1.1em;
+}
+
+body main {
+  padding: 0em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+body main h1 {
+  color: #eb9764;
+  font-size: 2.7em;
+  font-weight: bold;
+}
+
+body main h2 {
+  color: #616161;
+  font-size: 1.7em;
+  font-style: italic;
+}
+
+body main #about-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  height: 100vh;
+  font-size: 1.3em;
+  text-align: left;
+  z-index: 9999;
+}
+
+body main #about-box .content {
+  padding: 3em;
+}
+
+body main #about-box .content p {
+  width: 92%;
+}
+
+body main img {
+  margin: 0 -9em;
+  width: 60vw;
+}
+
+body #style-guide-box {
+  margin-top: -10em;
+}
+
+body #style-guide-box #style-guide {
+  margin-top: -20em;
+  width: 100%;
+  z-index: 0000;
+}
+
+body #ui-mockup {
+  height: 100vh;
+}
+
+body #ui-mockup img {
+  -webkit-transform: rotate(-10deg);
+          transform: rotate(-10deg);
+  margin: -15em 0;
+}
+
+body #goals {
+  background-image: url("/dog-bg.jpg");
+  background-repeat: no-repeat;
+  background-position-y: bottom;
+  background-position-x: 10em;
+  font-size: 1.3em;
+  height: vh;
+  padding: 1.6em;
+}
+
+body #goals .content {
+  width: 65%;
+  margin-top: 5em;
+}
+
+body #goals .content h2 {
+  color: #616161;
+  font-size: 1.7em;
+  font-style: italic;
+  padding: 1em 0;
+}
+
+body #goals .content p {
+  color: #616161;
+}
+
+body #goals .content .bold {
+  font-weight: bold;
+  color: #eb9764;
+}
+/*# sourceMappingURL=style.css.map */
