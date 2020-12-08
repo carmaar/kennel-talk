@@ -140,7 +140,7 @@ body #ui-mockup img {
 }
 
 body #goals {
-  background-image: url("/dog-bg.jpg");
+  background-image: url("dog-bg.jpg");
   background-repeat: no-repeat;
   background-position-y: bottom;
   background-position-x: 10em;
