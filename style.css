@@ -117,6 +117,7 @@ body main #about-box .content p {
 body main img {
   margin: 0 -9em;
   width: 60vw;
+  z-index:99999;
 }
 
 body #style-guide-box {
@@ -140,7 +141,7 @@ body #ui-mockup img {
 }
 
 body #goals {
-  background-image: url("kennel-talk/dog-bg.jpg");
+  background-image: url("dog-bg.png");
   background-repeat: no-repeat;
   background-position-y: bottom;
   background-position-x: 10em;
