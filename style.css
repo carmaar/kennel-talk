@@ -117,7 +117,8 @@ body main #about-box .content p {
 body main img {
   margin: 0 -9em;
   width: 60vw;
-  z-index:99999;
+  z-index:-1;
+  position:relative;
 }
 
 body #style-guide-box {
